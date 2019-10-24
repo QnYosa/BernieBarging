@@ -1,3 +1,4 @@
+require 'faker'
 
 Dog.destroy_all
 Dogsitter.destroy_all
@@ -7,7 +8,7 @@ Entity.destroy_all
 
 # création de ville (5 pour débuter)
 5.times do
-	City.create(city_name:Faker::Address.city)
+	City.create(name:Faker::Address.city)
 end
 
 # on crée des chiens aux noms de super heros
